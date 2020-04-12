@@ -1,7 +1,7 @@
 from IPython.display import clear_output
 #display Tictactoe board
 def display_board(marker_list):
-	clear_output()
+	print('\n'*100)
 	print('_________')
 	print('         ')
 	print(marker_list[7]+' | '+marker_list[8]+' | '+marker_list[9])
@@ -51,6 +51,7 @@ def game(marker1,marker2):
 		if pos in [1,5,9]:
 			diag[players[turn%2]][1]+=1	
 		turn=turn+1
+	display_board(marker_list)
 	if (max(max(col['X']),max(row['X']),max(diag['X']))==3):
 		if marker1=='X':
 			return 'Player1 wins!'
