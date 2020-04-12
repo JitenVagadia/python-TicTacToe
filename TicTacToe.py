@@ -63,7 +63,7 @@ def game(marker1,marker2):
 		else:
 			return 'Player1 wins!'
 	else:
-		return 'Game if a tie!!!'
+		return 'Game is a tie!!!'
 
 #main function to play games
 def play_game():
